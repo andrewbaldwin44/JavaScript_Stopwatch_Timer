@@ -1,0 +1,109 @@
+@import url('clock_scroll.css');
+@import url('time-input.css');
+
+:root {
+  --main-black: #2E2E2E;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  height: 100vh;
+  color: var(--main-black);
+  background-color: #CD5D67;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.clock-interface {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 62vh;
+  width: 58vw;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  width: 220px;
+  align-items: center;
+}
+
+.clock-display {
+  display: flex;
+}
+
+.stopwatch-time {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.timer-interface {
+  visibility: hidden;
+}
+
+.clock-control-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.interface-button {
+  color: inherit;
+  transition: color 4s;
+  cursor: pointer;
+}
+
+.interface-button:disabled {
+  transition: color 0.1s;
+  cursor: default;
+}
+
+.interface-button:hover:not(:disabled) {
+  color: black;
+}
+
+:disabled {
+  color: transparent;
+  cursor: default;
+}
+
+.resetRotate {
+  animation-name: resetRotate;
+  animation-duration: 1s;
+}
+
+@keyframes resetRotate {
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    font-size: 52px;
+  }
+
+  .clock-interface {
+    height: 64vh;
+  }
+  .clock {
+    height: 145px;
+    width: 280px;
+  }
+
+  .interface-button {
+    font-size: 50px;
+  }
+}

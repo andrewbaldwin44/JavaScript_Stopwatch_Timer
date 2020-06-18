@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae1e25f7b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lib/css/style.css">
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <button id="switch-stopwatch-button" class="scroll-button interface-button switch-stopwatch-button" disabled="true">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <section id="stopwatch-interface" class="clock-interface stopwatch-interface">
+      <h2>Stopwatch</h2>
+      <div class="clock">
+        <span id="stopwatch-display" class="clock-display">
+          <span id="stopwatch-hours" class="stopwatch-time">00</span>
+          <span>:</span>
+          <span id="stopwatch-minutes" class="stopwatch-time">00</span>
+          <span>:</span>
+          <span id="stopwatch-seconds" class="stopwatch-time">00</span>
+        </span>
+        <div class="clock-control-buttons stopwatch-control-buttons">
+          <span class="interface-button" id="stopwatch-play-button">
+            <i class="fas fa-play-circle"></i>
+          </span>
+          <span class="interface-button" id="stopwatch-pause-button">
+            <i class="fas fa-pause-circle"></i>
+          </span>
+          <span class="interface-button" id="stopwatch-restart-button">
+            <i class="fas fa-redo"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section id="timer-interface" class="clock-interface timer-interface">
+      <h2>Timer</h2>
+      <div class="clock">
+        <div id="time-input" class="time-input time-input-element">
+          <div id="time-input-container" class="time-element-container time-input-element hours">
+            <span id="time-element-hours" class="time-element time-input-element">00</span>
+          </div>
+          <span class="seperator time-input-element">:</span>
+          <div class="time-element-container time-input-element minutes">
+            <span id="time-element-minutes" class="time-element time-input-element">25</span>
+          </div>
+          <span class="seperator time-input-element">:</span>
+          <div class="time-element-container time-input-element seconds">
+            <span id="time-element-seconds" class="time-element time-input-element">00</span>
+          </div>
+          <div id="time-selector-container" class="time-selector-container time-input-element">
+            <span class="time-selectors time-input-element">
+              <i id="increase-time" class="time-selector time-input-element fas fa-chevron-up"></i>
+              <i id="decrease-time" class="time-selector time-input-element fas fa-chevron-down"></i>
+            </span>
+          </div>
+        </div>
+        <div class="clock-control-buttons timer-control-buttons">
+          <span class="interface-button" id="timer-play-button">
+            <i class="fas fa-play-circle"></i>
+          </span>
+          <span class="interface-button" id="timer-pause-button">
+            <i class="fas fa-pause-circle"></i>
+          </span>
+          <span class="interface-button" id="timer-restart-button">
+            <i class="fas fa-redo"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+    <button id="switch-timer-button" class="scroll-button interface-button switch-timer-button">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+    <script type="text/javascript" src="lib/scripts/time-input.js"></script>
+    <script type="text/javascript" src="lib/scripts/clock_scroll.js"></script>
+    <script type="text/javascript" src="lib/scripts/clock.js"></script>
+    <script type="text/javascript" src="lib/scripts/stopwatch.js"></script>
+    <script type="text/javascript" src="lib/scripts/timer.js"></script>
+  </body>
+</html>
