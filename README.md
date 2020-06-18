@@ -1,4 +1,4 @@
-# Javascript_Stopwatch_App
+# Javascript Stopwatch App
 > Written For Concordia Web Development
 
 ## Demo
