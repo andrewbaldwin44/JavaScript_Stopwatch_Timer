@@ -3,7 +3,7 @@
 
 ## Demo
 
-[View in your Browser](https://andrewbaldwin44.github.io/Javascript_Mastermind/)
+[View in your Browser](https://andrewbaldwin44.github.io/Javascript_Stopwatch_App/)
 
 ## Author
 
